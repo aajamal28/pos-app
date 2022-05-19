@@ -30,4 +30,7 @@ Route::group(["namespace"=>"admin"], function (){
     Route::get('/admin/bank', 'BankController@index');
     Route::get('/admin/departemen', 'DepartmenController@index');
     Route::get('/admin/position', 'PositionController@index');
+    Route::get('/admin/product', 'ProductController@index');
+    Route::get('/admin/product/register', 'ProductController@register');
+    Route::get('/admin/product/{any}', 'ProductController@detail/$1');
 });
